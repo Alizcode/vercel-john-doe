@@ -7,14 +7,14 @@ const port = process.env.PORT || 8080;
 const emailSender = require('./models/emailSender');
 //const register = require('./models/register');
 
+// middleware
 
 app.use(express.static(path.join(__dirname + '/public')));
 
 
-// middleware
 
 app.use(express.urlencoded({extended: true}));
-app.use(express.json());
+app.use(express.json({extended: false}));
 
 app.set('view engine', 'ejs')
 app.set('views', 'views');

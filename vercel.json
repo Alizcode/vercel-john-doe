@@ -2,18 +2,19 @@
   "version": 2,
   "builds": [
     {
-      
-      "src": "app.js",
-      
-      "use": "@vercel/node"
-    }
+        "installCommand": "npm install",
+      "framework": "expressjs",
+      "src": "app.js"
+    },
+    { "src": "*.html", "use": "@vercel/static" },
+    { "src": "*.js", "use": "@vercel/node" }
   ],
   "routes": [
     {
       
       "src": "/(.*)",
       
-      "dest": "app.js"
+      "dest": "/"
     }
   ]
 }
