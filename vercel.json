@@ -2,7 +2,6 @@
   "version": 2,
   "builds": [
     {
-      "framework": "expressjs",
       "src": "app.js"
     },
     { "src": "*.html", "use": "@vercel/static" },
