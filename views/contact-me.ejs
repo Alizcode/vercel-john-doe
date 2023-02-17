@@ -1,0 +1,216 @@
+<!doctype html>
+
+<html lang="en">
+   
+   
+    <head>
+
+
+        <!-- META -->
+        <meta charset="utf-8">
+        <meta name="robots" content="noodp">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+        <!-- PAGE TITLE -->
+        <title>Contact- Me</title>
+
+        <!-- FAVICON -->
+        <link rel="shortcut icon" href="assets/img/favicon.png">
+
+        <!-- FONTS -->
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900&amp;subset=latin-ext" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- STYLESHEETS -->
+        <link rel="stylesheet" type="text/css" href="assets/css/plugins.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/footer.css">
+
+
+
+    </head>
+
+
+    <body class="sub-page">
+    
+        <header class="header">
+            <div class="header-container"><a href="#">EN</a> | <a href="#">DE</a></div>
+        </header>
+       
+        <!-- PRELOADER -->
+        <div class="preloader">
+           
+           
+            <!-- SPINNER -->
+            <div class="spinner">
+             
+              <div class="bounce-1"></div>
+              <div class="bounce-2"></div>
+              <div class="bounce-3"></div>
+              
+            </div>
+            <!-- /SPINNER -->
+            
+            
+        </div>
+        <!-- /PRELOADER -->
+        
+        
+        <!-- NAVIGATION BUTTON -->
+        <div class="navigation-button navigation-button-contact">
+
+            <a href="/"><p class="nav-links nav-links-contact"  data-toggle="tooltip" data-placement="top" title="Home"><i class="fa-solid fa-house"></i></p></a>
+            <a href="about"><p class="nav-links nav-links-contact"  data-toggle="tooltip" data-placement="top" title="About Me"><i class="fa-solid fa-user"></i></p></a>
+            <a href="portfolio"><p class="nav-links nav-links-contact"  data-toggle="tooltip" data-placement="top" title="Portfolio"><i class="fa-solid fa-briefcase"></i></p></a>
+            <!-- <a href="resume"><p class="nav-links nav-links-contact">Resume</p></a> -->
+
+        </div>
+        <!-- /NAVIGATION BUTTON -->
+
+
+        <!-- ABOUT -->
+        <div class="about">
+            
+            <!-- CONTAINER FLUID -->
+            <div class="container-fluid">
+                <div>
+                    <!-- HEADINGS -->
+                    <h3>Email me@</h3>
+                    <p>mail@gmail.com</p>
+                    <p>or feel free to contact me via form below</p>
+    
+                    <!-- /HEADINGS -->
+    
+                </div>
+                <div class="alert alert-danger " role="alert" id="warning-message">An error occurred while sending the message</div>
+                <div class="alert alert-success " role="alert" id="alert-message">Message has been sent successfully</div>
+                <form id="contact-form" action="" method="POST" class="tm-contact-form mx-auto">
+                    <div class="form-group form-top-group">
+                        <input id="name-input" type="text" name="name" class="form-control rounded-0" placeholder="Name" required />
+                        <input id="email-input" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" type="email" name="email" class="form-control rounded-0" placeholder="Email" required />
+                    </div>
+                    
+                    <div class="form-group">
+                        <select class="form-control" id="select-input" name="inquiry">
+                            <option value="-">About</option>
+                            <option value="Info">Info</option>
+                            <option value="Creative-Design">Creative Design</option>
+                            <option value="uiux">UI / UX</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message-input" rows="8" name="message" class="form-control rounded-0" placeholder="Message" required=></textarea>
+                    </div>
+
+                    <div class="form-group tm-text-right">
+                        <input id="submit-button" type="submit" class="btn btn-primary"></input>
+                    </div>
+                </form> 
+                            
+
+               
+                <!-- <h6 class="scroll-animated-from-bottom">Get in touch with me via:</h6>
+                <p class="scroll-animated-from-bottom">mrakaraza@gmail.com</p> -->
+            
+            
+            </div>
+            <!-- CONTAINER FLUID -->
+            
+
+        </div>
+        <!-- /ABOUT -->
+        
+        
+        <!-- FOOTER -->
+        <div class="footer" id="footer">
+            
+            
+            
+            <div class="footer-inner scroll-animated-from-bottom">
+
+                <hr>
+                <div class="footer-con">
+                    
+                    <p>© Copyright 2022 | by <strong>AlizZz</strong></p>
+                    <!-- SOCIAL LINKS -->
+                
+                <ul class="social-icons scroll-animated-from-right">
+                    
+                           
+                    <a href="#" target="_blank"><li><i class="fa-brands fa-github" ></i></li></a>
+                    <li><a href="#" target="_blank"><i class="fa fa-brands fa-git-alt" aria-hidden="true"></i></a></li>
+                    <a href="mailto:mail@gmail.com" target="_blank"><li><i class="fa fa-google-plus" aria-hidden="true"></i></li></a>
+                    <a href="#" target="_blank"><li><i class="fa fa-linkedin" aria-hidden="true"></i></li></a>
+                   
+                    
+                </ul>
+                
+                <!-- /SOCIAL LINKS -->
+            </div>
+            </div>
+            <!-- /FOOTER INNER -->
+            
+
+        </div>
+        <!-- /FOOTER -->
+
+
+        <!-- JAVASCRIPTS -->
+        <script type="text/javascript" src="assets/js/plugins.js"></script>
+        <script type="text/javascript" src="assets/js/main.js"></script>
+
+<script>
+    $('#alert-message').hide();
+    $('#warning-message').hide();
+
+
+
+    const nameInput = document.getElementById('name-input');
+    const emailInput = document.getElementById('email-input');
+    const selectInput = document.getElementById('select-input');
+    const messageInput = document.getElementById('message-input');
+    const submitButton = document.getElementById('submit-button');
+
+    submitButton.addEventListener('click', async (e)=>{
+        
+        e.preventDefault();
+        const sendData = {
+            name: nameInput.value,
+            email: emailInput.value,
+            inquiry: selectInput.value,
+            message: messageInput.value,
+        }
+       const response = await fetch('/contact-me', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(sendData)
+
+        })
+        const {result} = await response.json();
+       // console.log(result)
+        if(result === 'done'){
+            $('#alert-message').show();
+            nameInput.value = '';
+            emailInput.value = '';
+            selectInput.value = '-';
+            messageInput.value = '';
+
+            setTimeout(() =>{
+                $('#alert-message').hide();
+            }, 3000)
+        } else {
+            $('#warning-message').show();
+            setTimeout(() =>{
+                $('#warning-message').hide();
+            }, 3000)
+        }
+    })
+
+
+</script>
+    </body> 
+    
+    
+</html>
