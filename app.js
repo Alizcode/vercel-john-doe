@@ -15,6 +15,7 @@ app.use(express.static(path.join(__dirname + '/public')));
 app.use(express.urlencoded({extended: true}));
 app.use(express.json({extended: false}));
 
+app.set('port', port)
 app.set('view engine', 'ejs')
 app.set('views', 'views');
 app.get('/', (req, res) => {
