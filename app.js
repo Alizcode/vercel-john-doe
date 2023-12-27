@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const env = require('dotenv').config();
 const path = require('path');
-const port = process.env.PORT || 4000;
+const port = process.env.PORT || 4500;
 
 const emailSender = require('./models/emailSender');
 
