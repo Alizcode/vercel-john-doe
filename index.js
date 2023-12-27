@@ -7,7 +7,7 @@ const emailSender = require('./models/emailSender');
 
 // middleware
 
-app.use(express.static('public'));
+app.use(express.static(path.join(__dirname, 'public')));
 
 
 
