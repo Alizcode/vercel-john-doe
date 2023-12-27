@@ -41,14 +41,6 @@ function sendEmail(emailData, cb) {
 
 }
 
-
-
-
-
-
-
-
-
 module.exports = {
     sendEmail
 }

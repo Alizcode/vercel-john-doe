@@ -2,16 +2,9 @@ const express = require('express');
 const app = express();
 const env = require('dotenv').config();
 const path = require('path');
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 4000;
 
 const emailSender = require('./models/emailSender');
-//const register = require('./models/register');
-
-let corsOptions = {
-    origin: ["http://localhost:8080", "https://humanscape-team5a.netlify.app"],
-  };
-  
-  app.use(cors(corsOptions));
 
 // middleware
 
